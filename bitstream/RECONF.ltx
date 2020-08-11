@@ -1,0 +1,1736 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "XSDBS_V2",
+                        "name": "hbm_0_inst",
+                        "spec": "labtools_xsdbslavelib_v2",
+                        "ipName": "hbm",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "1E5EEEFAD61A57DAB9976A270D2EAE3B"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "vio_0_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 2,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "E7FF0C2124325E10A2C1DED3BCFA7191",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "trigger",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "state[3]"
+                                            },
+                                            {
+                                                "name": "state[2]"
+                                            },
+                                            {
+                                                "name": "state[1]"
+                                            },
+                                            {
+                                                "name": "state[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "random",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out3",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "iswrite",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "len",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "len[3]"
+                                            },
+                                            {
+                                                "name": "len[2]"
+                                            },
+                                            {
+                                                "name": "len[1]"
+                                            },
+                                            {
+                                                "name": "len[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out5",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out6",
+                                "id": 6,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__0",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__0[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__0[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__0[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__0[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__0[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out7",
+                                "id": 7,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__1[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__1[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__1[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__1[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out8",
+                                "id": 8,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__2",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__2[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__2[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__2[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__2[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__2[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out9",
+                                "id": 9,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__3",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__3[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__3[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__3[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__3[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__3[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out10",
+                                "id": 10,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__4",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__4[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__4[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__4[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__4[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__4[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out11",
+                                "id": 11,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__5",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__5[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__5[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__5[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__5[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__5[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out12",
+                                "id": 12,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__6",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__6[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__6[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__6[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__6[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__6[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out13",
+                                "id": 13,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__7",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__7[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__7[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__7[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__7[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__7[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out14",
+                                "id": 14,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__8",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__8[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__8[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__8[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__8[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__8[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out15",
+                                "id": 15,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__9",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__9[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__9[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__9[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__9[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__9[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out16",
+                                "id": 16,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__10",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__10[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__10[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__10[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__10[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__10[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out17",
+                                "id": 17,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__11",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__11[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__11[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__11[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__11[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__11[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out18",
+                                "id": 18,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 18,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__12",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__12[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__12[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__12[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__12[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__12[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out19",
+                                "id": 19,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 19,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__13",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__13[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__13[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__13[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__13[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__13[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out20",
+                                "id": 20,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 20,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__14",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__14[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__14[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__14[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__14[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__14[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out21",
+                                "id": 21,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 21,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__15",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__15[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__15[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__15[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__15[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__15[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out22",
+                                "id": 22,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 22,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__16",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__16[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__16[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__16[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__16[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__16[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out23",
+                                "id": 23,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 23,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__17",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__17[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__17[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__17[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__17[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__17[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out24",
+                                "id": 24,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 24,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__18",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__18[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__18[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__18[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__18[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__18[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out25",
+                                "id": 25,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 25,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__19",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__19[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__19[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__19[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__19[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__19[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out26",
+                                "id": 26,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 26,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__20",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__20[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__20[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__20[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__20[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__20[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out27",
+                                "id": 27,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 27,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__21",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__21[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__21[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__21[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__21[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__21[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out28",
+                                "id": 28,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 28,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__22",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__22[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__22[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__22[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__22[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__22[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out29",
+                                "id": 29,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 29,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__23",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__23[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__23[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__23[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__23[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__23[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out30",
+                                "id": 30,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 30,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__24",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__24[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__24[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__24[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__24[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__24[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out31",
+                                "id": 31,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 31,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__25",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__25[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__25[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__25[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__25[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__25[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out32",
+                                "id": 32,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 32,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__26",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__26[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__26[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__26[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__26[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__26[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out33",
+                                "id": 33,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 33,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__27",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__27[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__27[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__27[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__27[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__27[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out34",
+                                "id": 34,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 34,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__28",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__28[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__28[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__28[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__28[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__28[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out35",
+                                "id": 35,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 35,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__29",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__29[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__29[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__29[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__29[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__29[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out36",
+                                "id": 36,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 36,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.select_port__30",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mon\\\\.select_port__30[4]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__30[3]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__30[2]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__30[1]"
+                                            },
+                                            {
+                                                "name": "mon\\\\.select_port__30[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "vio_1_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 3,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "BCA469E5213A5F4CBB05E389468E83FE",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 37,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 38,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__0",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 39,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__1",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out3",
+                                "id": 40,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__2",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out4",
+                                "id": 41,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__3",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out5",
+                                "id": 42,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__4",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out6",
+                                "id": 43,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__5",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out7",
+                                "id": 44,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__6",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out8",
+                                "id": 45,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__7",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out9",
+                                "id": 46,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__8",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out10",
+                                "id": 47,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__9",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out11",
+                                "id": 48,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__10",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out12",
+                                "id": 49,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__11",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out13",
+                                "id": 50,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__12",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out14",
+                                "id": 51,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__13",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out15",
+                                "id": 52,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__14",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out16",
+                                "id": 53,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__15",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out17",
+                                "id": 54,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__16",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out18",
+                                "id": 55,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 18,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__17",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out19",
+                                "id": 56,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 19,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__18",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out20",
+                                "id": 57,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 20,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__19",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out21",
+                                "id": 58,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 21,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__20",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out22",
+                                "id": 59,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 22,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__21",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out23",
+                                "id": 60,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 23,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__22",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out24",
+                                "id": 61,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 24,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__23",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out25",
+                                "id": 62,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 25,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__24",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out26",
+                                "id": 63,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 26,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__25",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out27",
+                                "id": 64,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 27,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__26",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out28",
+                                "id": 65,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 28,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__27",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out29",
+                                "id": 66,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 29,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__28",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out30",
+                                "id": 67,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 30,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__29",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out31",
+                                "id": 68,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 31,
+                                "nets": [
+                                    {
+                                        "name": "mon\\\\.reset__30",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

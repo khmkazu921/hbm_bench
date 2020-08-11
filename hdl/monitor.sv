@@ -30,7 +30,8 @@ interface Monitor;
     wire  [35:0] count_rokay;
     wire  [35:0] count_bokay;
     wire  [4:0]  select_port;
+    wire  reset;
     wire  random;
     wire [3:0] state;
-    wire [7:0] len;
+    wire [3:0] len;
 endinterface
